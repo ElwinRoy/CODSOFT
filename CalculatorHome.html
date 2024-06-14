@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Calculator</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 0; 
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding-top: 100px;
+    }
+
+    .heading {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .subheading {
+      font-size: 24px;
+      margin-bottom: 40px;
+      color: #666;
+    }
+
+    .calculator-link {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 24px;
+      background-color: #ff6b6b;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .calculator-link:hover {
+      background-color: #ff4757;
+    }
+
+    .illustration {
+      margin-top: 50px;
+      animation: bounce 1s ease infinite alternate;
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Welcome to Calculator</h1>
+    <p class="subheading">A simple and creative calculator for your everyday calculations.</p>
+    <a href="calculator.html" class="calculator-link">Go to Calculator</a>
+  </div>
+</body>
+</html>

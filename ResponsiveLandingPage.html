@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelX - Your Ultimate Destination</title>
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.video-bg {
+  position:fixed ;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #ffd700; 
+}
+
+.content {
+  padding: 200px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  color: blue;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  color: blue;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+
+<video class="video-bg" autoplay muted loop>
+  <source src="vid/nature.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="#" class="logo">TravelX</a>
+    <ul class="menu">
+      <li><a href="ResponsiveLandingPage.html">Home</a></li>
+      <li><a href="Destinations.html">Destinations</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="ContactUs.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="content">
+  <h1>Welcome to TravelX</h1>
+  <p>Your ultimate destination for unforgettable journeys.</p>
+  <p>Explore exotic destinations, book amazing packages, and make memories that last a lifetime.</p>
+  <p>Start your adventure with TravelX today!</p>
+</div>
+
+<script>
+window.addEventListener('scroll', function() 
+{
+  var navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50)
+   {
+    navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.9)'; 
+  } else 
+  {
+    navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
+  }
+});
+</script>
+
+</body>
+</html>
